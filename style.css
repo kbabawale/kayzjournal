@@ -1,0 +1,376 @@
+@charset "utf-8";
+/* CSS Document */
+html {overflow-y: scroll;}
+
+* {
+	padding:0;
+	margin:0;
+}
+
+@font-face {
+    font-family: myfont;
+	src:url('fontawesome-webfont.ttf');
+}
+
+body{
+	//font-family:Calibri Light, Cambria, Yu Gothic Medium, sans-serif;
+	font-family:Microsoft JhengHei Light,Microsoft JhengHei;
+	//font-family: myfont;
+	font-size:1.0em;
+	margin:0;
+	padding:0;
+	//background:url(images/home_back.png);
+	background:#333;
+	width:100%;
+	min-width:1000px;
+	height:auto;
+}
+
+h1,h2,h3,h4,h5,p{
+	font-family:Microsoft JhengHei Light,Microsoft JhengHei;
+	//font-family:Calibri Light, Cambria, "Yu Gothic Medium", sans-serif;
+	//font-family:myfont;
+	color:#333;
+	text-align:left;
+	font-weight:normal;
+}
+h1 {
+	font-size:2.6em;
+}
+h2 {
+	font-size:2.5em;
+}
+h3 {
+	font-size:2em;
+}
+
+h4 {
+	font-size:1.2em;
+}
+
+h5 {
+	font-size:1.1em;
+}
+
+h6 {
+	font-size:1.05em;
+}
+
+p {
+	font-size:1em;
+}
+
+#middiv{
+	background:#fff;
+	width:500px;
+	height:300px;
+	position:fixed; 
+	top:50%; 
+	left:50%; 
+	transform:translate(-50%,-50%);
+	//border-radius:15px;
+	//border:solid 3px #999999;
+	box-shadow:2px 2px 5px #000; /*left, top, blur size, blur color */
+}
+
+#logo1 {
+	border-bottom:5px solid black;
+	width:100%;
+	height:150px;
+}
+
+#maincontent{
+	background:#eee;
+	width:90%;
+	min-width:900px;
+	height:auto;
+	position:absolute;
+	left:5%;
+	top:5%;
+	//border:#000 solid 1px;
+	padding:5px;
+	box-shadow:5px 5px 5px #000; /*left, top, blur size, blur color */
+	//border-radius:10px;
+	//display:none;
+}
+
+#header{
+	width:100%;
+	min-width:850px;
+	//border:red solid 1px;
+	height:100px;
+	background:#000;
+	background:url(images/home_back.png) no-repeat;
+	//background:url(images/Nature-Abstract-Painting.jpg) top no-repeat;
+	color:white;
+	float:left;
+	//border-radius:10px;
+}
+#innerheader{
+	padding:5px;
+}
+#display_date{
+	//color:#FF9;
+	//font-size:.em;
+	//border:1px white solid;
+	width:30%;
+	padding-top:25px;
+	float:left;
+}
+#display_time{
+	color:#FF9;
+	font-size:2em;
+	//border:1px white solid;
+	width:20%;
+	//float:left;
+	clear:left;
+}
+#logo{
+	color:#ff9;
+	position:absolute;
+	top:10px;
+	left:35%;
+	width:auto;
+	height:auto;
+	font-size:1.8em;
+	font-weight:bold;
+	float:left;
+	//border:1px white solid;
+}
+#searchbar{
+	//border:1px white solid;
+	position:absolute;
+	top:60px;
+	left:25%;
+	width:40%;
+	height:auto;
+}
+#searchbar #search{
+	width:100%;
+	height:35px;
+	color:#fff;
+	background:inherit;
+	font-family: "Microsoft JhengHei",Microsoft JhengHei Light;
+	font-size:inherit;
+	border:1px white solid;
+	//border-radius:10px;
+	padding:0px 5px;
+}
+#quote_div{
+	background:black;
+	//opacity:0.55;
+	width:30%;
+	float:right;
+	margin-right:10px;
+	margin-top:-85px;
+	height:auto;
+	color:#ff9;
+}
+
+#mainbody{
+	width:100%;
+	min-width:850px;
+	//border:red solid 1px;
+	height:auto;
+	background:white;
+	//background:url(images/Nature-Abstract-Painting.jpg) top no-repeat;
+	background:url(images/home_back.png) repeat;
+	color:white;
+	float:left;
+}
+#inner_mainbody{
+	padding:5px;
+}
+#titlebar{
+	background:#fff;
+	//border-bottom:2px solid black;
+	float:left;
+	width:100%;
+	//border-radius:5px;
+	padding:3px 5px;
+}
+#titlebar a{
+	
+	color:#06C;
+	font-weight:normal;
+	text-decoration:none;
+}
+#titlebar a:hover{
+	text-decoration:underline;
+}
+#tabs{
+	float:left;
+	width:100%;
+	//border:1px solid red;
+	//background:url(images/3931_Landscape-Paris-night-view-HD-wallpaper.jpg) center no-repeat;
+}
+#tabs #innertabs{
+	padding:5px;
+}
+#tabs p{
+	padding:10px;
+	color:#ff9;
+	font-size:1.5em;
+	margin-top:10px;
+	//text-decoration:underline;
+}
+#tabs #tab1{
+	width:45%;
+	//width:24%;
+	background:black;
+	height:400px;
+	color:white;
+	float:left;
+	margin-right:5px;
+	margin-bottom:5px;
+	border-radius:5px;
+	opacity:0.75;
+	border:solid white 1px;
+}
+#tabs #tab1:hover{
+	cursor:pointer;
+	//background:#333;
+	opacity:0.95;
+}
+#tabs #tab2{
+	width:45%;
+	//width:24%;
+	background:black;
+	height:400px;
+	color:white;
+	float:left;
+	margin-right:5px;
+	margin-bottom:5px;
+	border-radius:5px;
+	opacity:0.75;
+	border:solid white 1px;
+}
+#tabs #tab2:hover{
+	cursor:pointer;
+	//background:#333;
+	opacity:0.95;
+}
+#tabs #tab3{
+	width:24%;
+	background:black;
+	height:400px;
+	color:white;
+	float:left;
+	margin-right:5px;
+	margin-bottom:5px;
+	border-radius:5px;
+	opacity:0.75;
+	border:solid white 1px;
+}
+#tabs #tab3:hover{
+	cursor:pointer;
+	//background:#333;
+	opacity:0.95;
+}
+#tabs #tab4{
+	width:24%;
+	background:black;
+	height:200px;
+	color:white;
+	float:left;
+	margin-bottom:5px;
+	padding-right:12px;
+	border-radius:5px;
+	opacity:0.75;
+	border:solid white 1px;
+}
+#tabs #tab4:hover{
+	cursor:pointer;
+	//background:#333;
+	opacity:0.95;
+}
+#tabs #tab5{
+	width:24%;
+	background:black;
+	height:195px;
+	float:left;
+	color:white;
+	margin-bottom:5px;
+	padding-right:12px;
+	border-radius:5px;
+	opacity:0.75;
+	border:solid white 1px;
+}
+#tabs #tab5:hover{
+	cursor:pointer;
+	//background:#333;
+	opacity:0.95;
+}
+
+#footer{
+	width:100%;
+	min-width:850px;
+	//border:red solid 1px;
+	height:auto;
+	background:#000000;
+	float:left;
+	
+}
+#footer p{
+	padding:10px;
+	color:white;
+	float:left;
+}
+
+#footer #birthday{
+	color:#ff9;
+	//border:solid 1px red;
+	float:left;
+}
+
+
+
+#mainmenu{
+	float:left;
+	width:100%;
+	//border:1px solid red;
+	//background:url(images/3931_Landscape-Paris-night-view-HD-wallpaper.jpg) center no-repeat;
+}
+#leftsidemenu{
+	width:20%;
+	height:auto;
+	min-width:200px;
+	float:left;
+	//border:solid 1px white;
+}
+#leftsidemenu ul{
+	
+}
+#leftsidemenu li{
+	list-style-type:none;
+	padding:10px 5px;
+	background:black;
+	margin:5px 0px;
+	text-align:center;
+}
+#leftsidemenu a{
+	text-decoration:none;
+	color:white;
+}
+#leftsidemenu li:hover{
+	background:#333333;
+	color:white;
+}
+
+#rightsidemenu{
+	left:22%;
+	width:77%;
+	height:auto;
+	min-width:690px;
+	float:right;
+	//border:solid 1px white;
+	background:white;
+	color:black;
+	margin-top:5px;
+	//margin-right:05px;
+	//display:none;
+}
+#rightsidemenu #innerrightsidemenu {
+	padding:5px;
+}
+
